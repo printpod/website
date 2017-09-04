@@ -1271,6 +1271,7 @@
     position: relative;
     top: 1px; }
 
+
 .btn-primary {
   background-color: #21232a;
   color: #FFFFFF; }
@@ -3778,7 +3779,6 @@ Created using IcoMoon - icomoon.io
     background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-    /* Standard syntax */ }
   .page-header .container {
     z-index: 2; }
 
