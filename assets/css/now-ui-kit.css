@@ -1276,7 +1276,7 @@
   background-color: #21232a;
   color: #FFFFFF; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover, .show > .btn-primary.dropdown-toggle, .show > .btn-primary.dropdown-toggle:focus, .show > .btn-primary.dropdown-toggle:hover {
-    background-color: #2e313b;
+    background-color: #2CA8FF;
     color: #FFFFFF;
     box-shadow: none; }
   .btn-primary:hover {
