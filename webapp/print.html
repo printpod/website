@@ -184,7 +184,7 @@
                                 <span class="mdl-checkbox__label ">I have read and accept the <a href="# ">Terms of Use</a> and <a href="# ">Privacy Policy</a></span>
                                 </label>
 
-                                    <button class="btn lt-register-btn " href='../index.html'formaction="# ">register now<i class="icon-right pull-right "></i></button>
+                                    <button class="btn lt-register-btn " href='../index.html'> register now<i class="icon-right pull-right "></i></button>
                                 </div>
                             </form>
                             <!--register form-->
@@ -289,13 +289,6 @@
       //  If there is no current user, log in with auth.signInWithCredential(credential)
       //  If there is a current user and it's anonymous, atttempt to link the new user with firebase.auth().currentUser.link(credential) 
       //  The user link will fail if the user has already been created, so catch the error and sign in.
-    });
-    
-    
-    document.getElementById('sign-out').addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      firebase.auth().signOut();
     });
 
     document.getElementById('register').addEventListener('click', function(e) {
