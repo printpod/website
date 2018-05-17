@@ -14,7 +14,7 @@
 
      <!-- FireBase SDK and  install code -->
 
-
+    
     <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
     <script>
       // Initialize Firebase
@@ -184,7 +184,7 @@
                                 <span class="mdl-checkbox__label ">I have read and accept the <a href="# ">Terms of Use</a> and <a href="# ">Privacy Policy</a></span>
                                 </label>
 
-                                    <button class="btn lt-register-btn " formaction="# ">register now<i class="icon-right pull-right "></i></button>
+                                    <button class="btn lt-register-btn " href='../index.html'formaction="# ">register now<i class="icon-right pull-right "></i></button>
                                 </div>
                             </form>
                             <!--register form-->
@@ -270,18 +270,10 @@
         });
     </script>
 
-       <!--Handle auth events-->
-  <script>
-    firebase.auth().onAuthStateChanged(function(user) {
-      window.user = user;
-      // Step 1:
-      //  If no user, sign in anonymously with firebase.auth().signInAnonymously()
-      //  If there is a user, log out out user details for debugging purposes.
-    });
-  </script>
 
 
-    <!--Handle page events-->
+
+    <!--Handles all Firebase interaction + events-->
   <script>    
     document.getElementById('login').addEventListener('click', function(e) {
       e.preventDefault();
@@ -316,7 +308,22 @@
 
     });
 
-    
+// Add a real time listener
+    firebase.auth().onAuthStateChanged(fireBaseUser =>{
+      if(fireBaseUser) {
+
+        console.log(fireBaseUser);
+      }
+        else{
+
+            console.log("not logged in");
+        }
+
+      // Step 1:
+      //  If no user, sign in anonymously with firebase.auth().signInAnonymously()
+      //  If there is a user, log out out user details for debugging purposes.
+    });
+
 
 
   </script>
