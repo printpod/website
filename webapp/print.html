@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="css/bootstrap-offset-right.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Login – PrintPod</title>
+
+     <!-- FireBase SDK and  install code -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
+        authDomain: "printpod-firebase.firebaseapp.com",
+        databaseURL: "https://printpod-firebase.firebaseio.com",
+        projectId: "printpod-firebase",
+        storageBucket: "printpod-firebase.appspot.com",
+        messagingSenderId: "465822311345"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <style>
         .mdl-textfield__label {
             margin-bottom: 0;
@@ -145,13 +163,13 @@
                                     </div>
 
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                                        <input class="mdl-textfield__input " type="text " pattern="-?[0-9]*(\.[0-9]+)? " id="studentID ">
+                                        <input class="mdl-textfield__input " type="text " pattern="[0-9]{6,8}" id="studentID ">
                                         <label class="mdl-textfield__label " for="studentID ">Student ID (just numbers)</label>
                                         <span class="mdl-textfield__error ">Please enter your student ID numbers only, without the 'z'</span>
                                     </div>
 
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                                        <input class="mdl-textfield__input " type="text " pattern="-?[0-9]*(\.[0-9]+)? " id="mobileNumber ">
+                                        <input class="mdl-textfield__input " type="text " pattern="[0-9]{10}" id="mobileNumber ">
                                         <label class="mdl-textfield__label " for="mobileNumber ">Mobile Number</label>
                                         <span class="mdl-textfield__error ">Input is not a number!</span>
                                     </div>
@@ -166,7 +184,7 @@
                                 <span class="mdl-checkbox__label ">I have read and accept the <a href="# ">Terms of Use</a> and <a href="# ">Privacy Policy</a></span>
                                 </label>
 
-                                    <button class="btn lt-register-btn " formaction="# ">register now <i class="icon-right pull-right "></i></button>
+                                    <button class="btn lt-register-btn " formaction="# ">register now<i class="icon-right pull-right "></i></button>
                                 </div>
                             </form>
                             <!--register form-->
@@ -206,7 +224,7 @@
                                 </div>
 
                                 <div class="col-lg-10 col-lg-offset-1 col-lg-offset-right-1 col-md-10 col-md-offset-1 col-md-offset-right-1 col-sm-12 col-xs-12 pull-right ">
-                                    <button class="btn lt-register-btn">login <i class="icon-right "></i></button>
+                                    <button class="btn lt-register-btn">login<i class="icon-right "></i></button>
                                 </div>
                             </form>
                             <!--login form-->
@@ -219,9 +237,6 @@
         </div>
         <!--container-->
     </div>
-
-
-
 
 
 
@@ -254,6 +269,61 @@
             },
         });
     </script>
+
+       <!--Handle auth events-->
+  <script>
+    firebase.auth().onAuthStateChanged(function(user) {
+      window.user = user;
+      // Step 1:
+      //  If no user, sign in anonymously with firebase.auth().signInAnonymously()
+      //  If there is a user, log out out user details for debugging purposes.
+    });
+  </script>
+
+
+    <!--Handle page events-->
+  <script>    
+    document.getElementById('login').addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var email = document.getElementById('emailAddress').value;
+      var password = document.getElementById('password').value
+      var credential = firebase.auth.EmailAuthProvider.credential(email, password);
+      var auth = firebase.auth();
+      var currentUser = auth.currentUser;
+      
+      // Step 2
+      //  Get a credential with firebase.auth.emailAuthProvider.credential(emailInput.value, passwordInput.value)
+      //  If there is no current user, log in with auth.signInWithCredential(credential)
+      //  If there is a current user and it's anonymous, atttempt to link the new user with firebase.auth().currentUser.link(credential) 
+      //  The user link will fail if the user has already been created, so catch the error and sign in.
+    });
+    
+    
+    document.getElementById('sign-out').addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      firebase.auth().signOut();
+    });
+
+    document.getElementById('register').addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var email = document.getElementById('emailAddress').value;
+      var password = document.getElementById('password').value
+      var auth = firebase.auth();
+      var promise = auth.createUserWithEmailAndPassword(email, password);
+
+    });
+
+    
+
+
+  </script>
+
+<!-- end of firebase scripts and code -->
+
+
 
 </body>
 
