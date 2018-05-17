@@ -1,0 +1,289 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"adv",
+				"advertiserModal"
+			],
+			[
+				"bt",
+				"btn-icon"
+			],
+			[
+				"advert",
+				"advertiser-tag"
+			],
+			[
+				"printpod",
+				"PrintPodAU"
+			],
+			[
+				"string",
+				"stringUberBlack"
+			],
+			[
+				"UBer",
+				"UberAssist_price"
+			],
+			[
+				"Uber_",
+				"Uber_Assist"
+			],
+			[
+				"UNSW_",
+				"UNSW_long"
+			],
+			[
+				"ivy",
+				"ivy_long"
+			],
+			[
+				"book1",
+				"book1_goodreadID"
+			],
+			[
+				"a",
+				"authors"
+			],
+			[
+				"boo",
+				"book1"
+			],
+			[
+				"Bo",
+				"Book3"
+			],
+			[
+				"Boo",
+				"Book2"
+			],
+			[
+				"book",
+				"bookdata"
+			],
+			[
+				"price",
+				"price_estimate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/webapp/print.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/BACKUP/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/webapp/css/style.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/webapp/print.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/print.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/UI Kits Backups/material-design-login-template-master/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/assets/css/now-ui-kit.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/assets/css/bootstrap.min.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Firebase/public/assets/sass/now-ui-kit/_variables.scss",
+		"/Users/Vishnuu/python-getting-started/README.md",
+		"/Users/Vishnuu/Documents/UNSW/Semester 2, 2017/ACTL1101/Main Assignment/ISAE-SUPAERO%20Student%20Project%20Report%20Template/01-introduction.tex",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/assets/css/now-ui-kit.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Website/assets/css/bootstrap.min.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/privacy-policy.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/assets/sass/now-ui-kit/_social-buttons.scss",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/assets/sass/now-ui-kit/_variables.scss",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/assets/sass/now-ui-kit/_buttons.scss",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/UI Kits Backups/now-ui-kit-v1/assets/css/now-ui-kit.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/website/README.md",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Website/assets/css/now-ui-kit.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Prototyping/now-ui-kit-v1/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Website/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Website/assets/sass/now-ui-kit/_variables.scss",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Website/landing-page.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Prototyping/now-ui-kit-v1/examples/landing-page.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Prototyping/now-ui-kit-v1/assets/js/now-ui-kit.js",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Prototyping/now-ui-kit-v1/assets/css/demo.css",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/html/index.html",
+		"/Users/Vishnuu/Documents/PrintPod/Engineering/Prototyping/now-ui-kit-v1/assets/css/now-ui-kit.css",
+		"/Users/Vishnuu/Documents/Raspberry/uber_ride_estimate.py",
+		"/Users/Vishnuu/Documents/Lexer/bookreviews.py",
+		"/Users/Vishnuu/Documents/Lexer/author groups.py",
+		"/Users/Vishnuu/Documents/Lexer/NOT terms",
+		"/Users/Vishnuu/Documents/Lexer/Meet the Team.md",
+		"/Users/Vishnuu/Documents/Lexer/Backup/Meet the team v1.md",
+		"/Users/Vishnuu/Documents/Lexer/Meet the Team.mdown",
+		"/Users/Vishnuu/Documents/Lexer/BookReviews.js",
+		"/Users/Vishnuu/Documents/Lexer/Meet the team.md",
+		"/Users/Vishnuu/Documents/Lexer/Meet the Team2.mdown",
+		"/Users/Vishnuu/Documents/Raspberry Pi/uber_ride_estimate.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Australia.py",
+		"/Users/Vishnuu/Documents/Lexer/Vietnam.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Indonesia.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Philippines.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Malaysia.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Thailand.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/China.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Taiwan.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/Japan.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/South Korea.py",
+		"/Users/Vishnuu/Documents/Lexer/EA Attributes/South Korea"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.FuseBuildResults":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
