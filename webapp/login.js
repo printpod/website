@@ -1,5 +1,13 @@
 // Handles all Firebase interaction + events 
- 
+var config = {
+    apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
+    authDomain: "printpod-firebase.firebaseapp.com",
+    databaseURL: "https://printpod-firebase.firebaseio.com",
+    projectId: "printpod-firebase",
+    storageBucket: "printpod-firebase.appspot.com",
+    messagingSenderId: "465822311345"
+  };
+  firebase.initializeApp(config);
 
 // Add a real time listener
 firebase.auth().onAuthStateChanged(function(user) {
