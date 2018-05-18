@@ -20,7 +20,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 
       var email = document.getElementById('emailAddress').value;
       var password = document.getElementById('password').value;
-      window.alert("Email: " + email + " password " + password)
       firebase.auth.signInWithEmailAndPassword(email, password).catch(function(error){
         var errorCode = error.code
         var errorMessage = error.message
@@ -35,6 +34,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 // Register function
 function register() {
 
+  var email = document.getElementById('emailAddress').value;
+  var password = document.getElementById('password').value;
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
     var errorCode = error.code;
