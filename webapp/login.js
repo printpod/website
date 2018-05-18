@@ -7,8 +7,9 @@ var config = {
     databaseURL: "https://printpod-firebase.firebaseio.com",
     projectId: "printpod-firebase",
     storageBucket: "printpod-firebase.appspot.com",
-    messagingSenderId: "465822311345"
+    messagingSenderId: "465822311345",
   };
+
 firebase.initializeApp(config);
 
 
@@ -54,6 +55,7 @@ function register(){
 
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
+  document.getElementById("window").innerHTML = "Welcome to PrintPod! Upload your documents!";
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert("Error: " + errorCode + "message :" + errorMessage)
