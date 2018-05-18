@@ -1,7 +1,7 @@
 // Handles all Firebase interaction + events 
 
   // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
     authDomain: "printpod-firebase.firebaseapp.com",
     databaseURL: "https://printpod-firebase.firebaseio.com",
@@ -10,6 +10,7 @@
     messagingSenderId: "465822311345"
   };
   firebase.initializeApp(config);
+
 
 
 // Add a real time listener
@@ -55,34 +56,9 @@ function register(){
   // ...
 });
    
-document.getElementById('register-btn').addEventListener('click', register);
-
-
-
 };
 
-firebase.initializeApp({
-  apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
-  authDomain: "printpod-firebase.firebaseapp.com",
-  databaseURL: "https://printpod-firebase.firebaseio.com",
-  projectId: "printpod-firebase",
-});
+document.getElementById('register-btn').addEventListener('click', register);
 
-// Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
-
-// add data
-
-db.collection("users").add({
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
 
 
