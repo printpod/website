@@ -1,7 +1,7 @@
 // Handles all Firebase interaction + events 
 
   // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
     authDomain: "printpod-firebase.firebaseapp.com",
     databaseURL: "https://printpod-firebase.firebaseio.com",
@@ -9,7 +9,7 @@
     storageBucket: "printpod-firebase.appspot.com",
     messagingSenderId: "465822311345"
   };
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
 
 
 
@@ -17,7 +17,11 @@
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    window.alert('Signed in!')
+    firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+    }).catch(function(error) {
+  // An error happened.
+});
 
   } else {
     // No user is signed in.
@@ -52,7 +56,7 @@ function register(){
   // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert("Error: " + errorCode + errorMessage)
+    window.alert("Error: " + errorCode + "message :" + errorMessage)
   // ...
 });
    
