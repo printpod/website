@@ -1,5 +1,8 @@
 // Handles all Firebase interaction + events 
-var config = {
+
+(function() {
+  // Initialize Firebase
+  var config = {
     apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
     authDomain: "printpod-firebase.firebaseapp.com",
     databaseURL: "https://printpod-firebase.firebaseio.com",
@@ -41,10 +44,14 @@ function login() {
    
 
 // Register function
-function register() {
+document.getElementById('register').addEventListener('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
 
+  // Get details
   var email = document.getElementById('emailAddress').value;
   var password = document.getElementById('password').value;
+
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
     var errorCode = error.code;
@@ -53,4 +60,6 @@ function register() {
   // ...
 });
 
-}
+});
+
+}());
