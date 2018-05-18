@@ -9,6 +9,7 @@ var config = {
   };
   firebase.initializeApp(config);
 
+
 // Add a real time listener
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -24,7 +25,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 // Login function
- function login() {
+function login() {
 
       var email = document.getElementById('emailAddress').value;
       var password = document.getElementById('password').value;

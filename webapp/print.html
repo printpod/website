@@ -17,18 +17,6 @@
     
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
     <script src="login.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
-        authDomain: "printpod-firebase.firebaseapp.com",
-        databaseURL: "https://printpod-firebase.firebaseio.com",
-        projectId: "printpod-firebase",
-        storageBucket: "printpod-firebase.appspot.com",
-        messagingSenderId: "465822311345"
-      };
-      firebase.initializeApp(config);
-    </script>
 
     <style>
         .mdl-textfield__label {
@@ -152,7 +140,7 @@
 
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-group has-feedback">
                                         <input type="text" name="fname" id="fname" class="mdl-textfield__input" />
-                                        <label class="mdl-textfield__label " for="fullName ">Full Name</label>
+                                        <label class="mdl-textfield__label " for="fullName">Full Name</label>
                                         <span class="form-control-feedback" aria-hidden="true" id="fname1"></span>
                                     </div>
                                     <!--
@@ -161,29 +149,29 @@
                                         <label class="mdl-textfield__label " for="fullName ">Full Name</label>
                                     </div>-->
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                                        <input class="mdl-textfield__input " type="text " id="emailAddress ">
-                                        <label class="mdl-textfield__label " for="emailAddress ">Email Address</label>
+                                        <input class="mdl-textfield__input " type="text" id="emailAddress">
+                                        <label class="mdl-textfield__label " for="emailAddress">Email Address</label>
                                     </div>
 
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                                        <input class="mdl-textfield__input " type="text " pattern="[0-9]{6,8}" id="studentID ">
-                                        <label class="mdl-textfield__label " for="studentID ">Student ID (just numbers)</label>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input " type="text " pattern="[0-9]{6,8}" id="studentID">
+                                        <label class="mdl-textfield__label " for="studentID">Student ID (just numbers)</label>
                                         <span class="mdl-textfield__error ">Please enter your student ID numbers only, without the 'z'</span>
                                     </div>
 
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                                        <input class="mdl-textfield__input " type="text " pattern="[0-9]{10}" id="mobileNumber ">
+                                        <input class="mdl-textfield__input " type="text" pattern="[0-9]{10}" id="mobileNumber">
                                         <label class="mdl-textfield__label " for="mobileNumber ">Mobile Number</label>
                                         <span class="mdl-textfield__error ">Input is not a number!</span>
                                     </div>
 
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                                        <input class="mdl-textfield__input " type="password " id="SetPassword ">
-                                        <label class="mdl-textfield__label " for="SetPassword ">Set Password</label>
+                                        <input class="mdl-textfield__input " type="password " id="password">
+                                        <label class="mdl-textfield__label " for="SetPassword ">Password</label>
                                     </div>
 
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="termsFlag">
-                                <input type="checkbox" id="termsFlag" class="mdl-checkbox__input ">
+                                <input type="checkbox" id="termsFlag" class="mdl-checkbox__input">
                                 <span class="mdl-checkbox__label ">I have read and accept the <a href="# ">Terms of Use</a> and <a href="# ">Privacy Policy</a></span>
                                 </label>
 
