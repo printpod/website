@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap-offset-right.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Login – PrintPod</title>
-
-     <!-- FireBase SDK and  install code -->
-
-    
-    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
-    <script src="login.js"></script>
     
 
     <style>
@@ -176,12 +170,13 @@
                                 <span class="mdl-checkbox__label ">I have read and accept the <a href="# ">Terms of Use</a> and <a href="# ">Privacy Policy</a></span>
                                 </label>
 
-                                    <button class="btn lt-register-btn " onclick="register()"> register now<i class="icon-right pull-right "></i></button>
+                                    <button class="btn lt-register-btn " id='register-btn'> register now<i class="icon-right pull-right "></i></button>
                                 </div>
                             </form>
                             <!--register form-->
                         </div>
                         <div class="tab-pane fade" id="login">
+                            
                             <!--login form-->
                             <form>
 
@@ -230,6 +225,13 @@
         <!--container-->
     </div>
 
+
+
+     <!-- FireBase SDK and  install code -->
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script src="login.js"></script>
 
 
 

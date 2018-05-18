@@ -1,6 +1,5 @@
 // Handles all Firebase interaction + events 
 
-(function() {
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBhbCFJVb9k2ZoG-6ifAyUMn4fXHJ8B3Os",
@@ -21,7 +20,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
   } else {
     // No user is signed in.
-    window.alert('No user Signed in!')
+   // window.alert('No user Signed in!')
   }
 });
 
@@ -41,13 +40,9 @@ function login() {
 }
   
 
-   
 
 // Register function
-document.getElementById('register').addEventListener('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-
+function register(){
   // Get details
   var email = document.getElementById('emailAddress').value;
   var password = document.getElementById('password').value;
@@ -59,7 +54,10 @@ document.getElementById('register').addEventListener('click', function(e) {
     window.alert("Error: " + errorCode + errorMessage)
   // ...
 });
+   
+document.getElementById('register-btn').addEventListener('click', register);
 
-});
 
-}());
+
+};
+
